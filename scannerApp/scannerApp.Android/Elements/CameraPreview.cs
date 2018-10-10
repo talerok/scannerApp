@@ -8,9 +8,9 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 
-namespace scannerApp.Android.Elements
+namespace scannerApp.AndroidApp.Elements
 {
-
+    
     public enum CameraState
     {
         Opened,
@@ -79,8 +79,8 @@ namespace scannerApp.Android.Elements
             //если не нашли
             if (CameraService == null)
                 throw new NullReferenceException("cameraService not found");
-
             Texture = texture;
+            _initCamera();
         }
         /// <summary>
         /// Получить Id нужной камеры

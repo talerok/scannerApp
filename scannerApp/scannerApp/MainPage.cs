@@ -14,9 +14,17 @@ namespace scannerApp
             {
                 Children =
                 {
+                    new Label
+                    {
+                        Text = "1234"
+                    },
                     new CameraPreview{
                          HorizontalOptions = LayoutOptions.FillAndExpand,
                          VerticalOptions = LayoutOptions.FillAndExpand
+                    },
+                    new Label
+                    {
+                        Text = "5678"
                     }
                 }
             };
